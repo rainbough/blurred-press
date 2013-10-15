@@ -4,6 +4,14 @@
 
 $primary-color: #008080;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
 h1, h2, h3, h4, h5 {
   color: $primary-color;
 }
@@ -13,15 +21,19 @@ h1, h2, h3, h4, h5 {
 }
 
 a, a:visited {
-  color: darken($primary-color, 10%);
+  color: darken($primary-color, 20%);
 }
 
 article {
   h1.title {
-    font-style: italic;
+  font-style: italic;
   }
 
   time {
+	padding: 4px;
+	border: 2px solid darken($primary-color, 10%);
+	@include border-radius(5px);
+
   font: {
     weight: bold;
     family: Verdana, Geneva, sans-serif;
