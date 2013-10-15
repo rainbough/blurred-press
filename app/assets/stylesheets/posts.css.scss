@@ -14,6 +14,7 @@ $primary-color: #008080;
 
 h1, h2, h3, h4, h5 {
   color: $primary-color;
+;
 }
 
 .post-preview {
@@ -38,11 +39,15 @@ article {
     weight: bold;
     family: Verdana, Geneva, sans-serif;
     size: 0.8em;
+    color: red + blue;
+
   }
 }
 
 
   .body {
+  	color: red + blue;
+
     p { line-height: 1.5em; }
   }
 }
