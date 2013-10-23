@@ -24,11 +24,12 @@
 
       %section.top-bar-section
         %ul.right
-          %li
-            = link_to new_post_path do
-              %i.icon-edit
-              New post
           %li.divider
+          = user_content do
+            %li
+              = link_to new_post_path do
+                %i.icon-edit
+                New post
           %li
             - if current_user
               = link_to log_out_path do
