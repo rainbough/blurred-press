@@ -12,13 +12,22 @@ $primary-color: #008080;
           border-radius: $radius;
 }
 
+body{
+	text-align: center;
+	background: #000 image-url("pw_maze_black.png");
+}
+
+
 h1, h2, h3, h4, h5 {
   color: $primary-color;
 ;
 }
 
 .post-preview {
-  border-bottom: 3px solid $primary-color;
+	width: 50%;
+	background: #fff;
+  	border-bottom: 3px solid $primary-color;
+  	margin: auto;
 }
 
 a, a:visited {
@@ -51,3 +60,4 @@ article {
     p { line-height: 1.5em; }
   }
 }
+
